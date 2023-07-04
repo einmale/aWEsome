@@ -21,6 +21,7 @@ public class Game extends JFrame {
 
     public Game() {
         this.setName("aWEsome");
+        this.setTitle("aWEsome");
         this.setMinimumSize(new Dimension(256, 256));
         this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
