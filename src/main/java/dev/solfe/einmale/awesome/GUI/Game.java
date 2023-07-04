@@ -4,6 +4,7 @@ import dev.solfe.einmale.awesome.Listeners.TypeListener;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 import java.util.Random;
 
 public class Game extends JFrame {
@@ -22,6 +23,9 @@ public class Game extends JFrame {
     public Game() {
         this.setName("aWEsome");
         this.setTitle("aWEsome");
+        URL iconURL = getClass().getResource("/Class.png");
+        ImageIcon icon = new ImageIcon(iconURL);
+        this.setIconImage(icon.getImage());
         this.setMinimumSize(new Dimension(256, 256));
         this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
